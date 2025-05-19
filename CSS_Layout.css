@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e1e1e1;
+}
+
+.calculator {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: #373737;
+    box-shadow: 0 0 10px #101010;
+    position:absolute; 
+    top:0px;
+}
+
+.display {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: right;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #253129;
+    color: #ffffff;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.history {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: right;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #253129;
+    color: #ffffff;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.history_block {
+    width: 500px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #253129;
+    color: #ffffff;
+    box-sizing: border-box;
+    position:absolute; 
+    top:21px;
+    overflow-y: scroll; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #626262;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button[data-value="="] {
+    background-color: #ff6f00;
+}
+
+.buttons button[data-value="-"] {
+    background-color: #868686;
+}
+
+.buttons button[data-value="+"] {
+    background-color: #868686;
+}
+
+.buttons button[data-value="*"] {
+    background-color: #868686;
+}
+
+.buttons button[data-value="/"] {
+    background-color: #868686;
+}
+
+.buttons button[data-value="0"] {
+    grid-column: span 2;
+}
+
+.buttons button[data-value="C"] {
+    background-color: #ff0000;
+}
+
+.buttons button[data-value="AC"] {
+    background-color: #ff6f00;
+}
+
+.buttons button[data-value="⌫"] {
+    background-color: #ff6f00;
+}
