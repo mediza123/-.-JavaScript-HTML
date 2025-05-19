@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Не-совсем-примитивный калькулятор, сделанный с помощью HTML, CSS и JavaScript">
+    <title>Не-совсем-примитивный калькулятор</title>
+    <link rel="stylesheet" href="./CSS_Layout.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.0.1/math.js" integrity="sha512-ldafwBWmh8q0wplbjDzai4As66n/6e0kxw51a+LRJ6+aZ27t0oGpz7HH5dUh+MwWLacrsF8cGT4zR0p2S3QHtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Calculator_Code.js" async></script>
+</head>
+<body>
+    <div class="calculator" position:absolute; top:0px; id="calculator">
+        <div class="history" id="history">
+            <button class="button open" id="open">v</button>
+        </div>
+        <input type="text" id="input" class="display" readonly>
+        <div class="buttons">
+            <button id = "C" data-value="C">C</button>
+            <button id = "AC" data-value="AC">AC</button>
+            <button id = "⌫" data-value="⌫">⌫</button>
+            <button data-value="=">=</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="/">/</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="*">*</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="-">-</button>
+
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-value="+">+</button>
+        </div> 
+    </div>
+    <div class="history_block" id="history_block">
+        <button class="button close" id="close">x</button>
+        <div id="history_title">Окно истории действий:</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous" ></script>
+</body>
+</html>
